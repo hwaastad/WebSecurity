@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+    <!-- see http://tomee.apache.org/containers-and-resources.html -->
+
+    <!-- activate next line to be able to deploy applications in apps -->
+    <!-- <Deployments dir="apps" /> -->
+    <Deployments dir="apps" />
+    <Resource id="SmartGuestMail" type="javax.mail.Session">
+        mail.smtp.host=localhost
+        mail.smtp.port=25
+        mail.transport.protocol=smtp
+        mail.smtp.auth=true
+        mail.smtp.user=smartguest
+        password=humptydumpty
+    </Resource>
+</tomee>

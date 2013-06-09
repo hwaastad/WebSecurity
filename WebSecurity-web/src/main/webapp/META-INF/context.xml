@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/WebSecurity">
+   <!-- <Realm className="org.apache.catalina.realm.JAASRealm" appName="file"
+           userClassNames="org.apache.openejb.core.security.jaas.UserPrincipal"
+           roleClassNames="org.apache.openejb.core.security.jaas.GroupPrincipal">
+    </Realm>-->
+    <Realm className="org.apache.catalina.realm.JAASRealm" appName="file"
+           userClassNames="org.waastad.websecurity.login.JAASUserPrincipal,org.waastad.websecurity.login.JAASPasswordPrincipal"
+           roleClassNames="org.waastad.websecurity.login.JAASRolePrincipal">
+    </Realm>
+    <!-- <Realm className="org.apache.catalina.realm.DataSourceRealm" 
+           dataSourceName="SG22DS" 
+           roleNameCol="name" 
+           userCredCol="password" 
+           userNameCol="email" 
+           userRoleTable="v_application_user_group" 
+           userTable="v_application_user_group"/>
+    <Valve changeSessionIdOnAuthentication="false" className="org.apache.catalina.authenticator.FormAuthenticator"/>-->
+ 
+    <!--<Realm className="org.apache.catalina.realm.JAASRealm" appName="SmartGuestRealm"
+       userClassNames="org.apache.openejb.core.security.jaas.UserPrincipal"
+       roleClassNames="org.apache.openejb.core.security.jaas.GroupPrincipal">
+    </Realm>-->
+    <!-- <Realm className="org.apache.catalina.realm.JAASRealm" appName="SmartGuestRealm"
+           userClassNames="org.apache.openejb.core.security.AbstractSecurityService$User"
+           roleClassNames="org.apache.openejb.core.security.AbstractSecurityService$Group">
+    </Realm>-->
+</Context>
