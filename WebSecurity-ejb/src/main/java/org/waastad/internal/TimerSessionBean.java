@@ -12,6 +12,7 @@ import javax.ejb.Schedule;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.enterprise.event.Event;
+import javax.enterprise.inject.Any;
 import javax.inject.Inject;
 import org.waastad.business.BusinessBean;
 import org.waastad.business.HelloBean;
@@ -29,7 +30,7 @@ public class TimerSessionBean {
     @EJB
     private BusinessBean businessBean;
     @EJB private HelloBean helloBean;
-    @Inject private Event<String> log;
+    @Inject @Any private Event<String> log;
 
     @Schedule(hour = "*", minute = "*", second = "*/10")
     public void myTimer() {
