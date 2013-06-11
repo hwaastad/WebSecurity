@@ -32,7 +32,7 @@ public class TimerSessionBean {
     @EJB private HelloBean helloBean;
     @Inject @Any private Event<String> log;
 
-    @Schedule(hour = "*", minute = "*", second = "*/10")
+    @Schedule(hour = "*", minute = "*", second = "*/30")
     public void myTimer() {
 //        try {
 //            Properties props = new Properties();

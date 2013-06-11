@@ -16,7 +16,7 @@ import javax.enterprise.event.Observes;
  * @author Helge Waastad <helge.waastad@datametrix.no>
  */
 @Stateless
-//@Asynchronous
+@Asynchronous
 @DeclareRoles({"InternalGroup", "SuperAdmin"})
 public class HelloBean {
 
@@ -34,7 +34,6 @@ public class HelloBean {
         System.out.println("HelloBean: Hello: " + sessionContext.getCallerPrincipal().getName());
     }
 
-    @Asynchronous
     public void listenHello(@Observes String message) {
         if (sessionContext.isCallerInRole("InternalGroup")) {
             System.out.println("HelloBean Event: User is in InternalGroup");

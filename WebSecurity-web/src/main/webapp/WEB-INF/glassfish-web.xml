@@ -7,7 +7,7 @@
   </security-role-mapping>
   <security-role-mapping>
     <role-name>SuperAdmin</role-name>
-    <principal-name>superadmin-user</principal-name>
+    <group-name>SuperAdmin</group-name>
   </security-role-mapping>
   <class-loader delegate="true"/>
   <jsp-config>

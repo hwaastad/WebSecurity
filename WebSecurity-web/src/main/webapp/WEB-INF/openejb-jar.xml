@@ -6,4 +6,10 @@
             <principal-name>internal-user</principal-name> 
         </role-mapping> 
     </ejb-deployment>
+    <ejb-deployment ejb-name="BorderControl"> 
+        <role-mapping> 
+            <role-name>InternalGroup</role-name> 
+            <principal-name>internal-user</principal-name> 
+        </role-mapping> 
+    </ejb-deployment>
 </openejb-jar>
