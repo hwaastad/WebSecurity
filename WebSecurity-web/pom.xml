@@ -24,6 +24,7 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>WebSecurity-ejb</artifactId>
             <version>${project.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
@@ -59,9 +60,6 @@
                     <tomeeClassifier>plus</tomeeClassifier>
                     <deployOpenEjbApplication>true</deployOpenEjbApplication>
                     <libs>
-                        <lib>remove:myfaces-</lib>
-                        <lib>org.apache.myfaces.core:myfaces-api:2.1.12</lib>
-                        <lib>org.apache.myfaces.core:myfaces-impl:2.1.12</lib>
                     </libs>
                     <synchronization>
                         <extensions>

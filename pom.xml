@@ -10,6 +10,7 @@
         <module>WebSecurity-web</module>
         <module>WebSecurity-ejb</module>
     <module>WebSecurity-test</module>
+    <module>WebSecurity-ear</module>
   </modules>
   
     <dependencyManagement>

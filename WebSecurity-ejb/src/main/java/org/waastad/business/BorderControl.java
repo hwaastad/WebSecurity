@@ -19,6 +19,7 @@ import javax.ejb.Stateless;
 @Stateless
 @RunAs("InternalGroup")
 @DeclareRoles({"InternalGroup","SuperAdmin"})
+@RolesAllowed("SuperAdmin")
 public class BorderControl {
 
     @EJB
@@ -26,7 +27,7 @@ public class BorderControl {
     @Resource
     private SessionContext sessionContext;
 
-    @RolesAllowed("SuperAdmin")
+    //@RolesAllowed({"SuperAdmin","InternalGroup"})
     public void sayHelloBorder() {
         System.out.println("BorderControl:Start");
         if (sessionContext.isCallerInRole("InternalGroup")) {

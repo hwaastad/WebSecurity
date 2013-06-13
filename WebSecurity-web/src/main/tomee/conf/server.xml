@@ -121,7 +121,7 @@
                        resourceName="UserDatabase"/>
             </Realm>-->
             
-           <!-- <Realm className="org.apache.catalina.realm.JAASRealm" appName="file"
+            <!-- <Realm className="org.apache.catalina.realm.JAASRealm" appName="file"
                    userClassNames="org.apache.openejb.core.security.jaas.UserPrincipal"
                    roleClassNames="org.apache.openejb.core.security.jaas.GroupPrincipal">
             </Realm>-->
@@ -130,6 +130,10 @@
                    userClassNames="org.apache.openejb.core.security.AbstractSecurityService$User"
                    roleClassNames="org.apache.openejb.core.security.AbstractSecurityService$Group">
             </Realm> -->
+          <!--  <Realm className="org.apache.catalina.realm.JAASRealm" appName="file"
+                   userClassNames="org.waastad.websecurity.login.JAASUserPrincipal,org.waastad.websecurity.login.JAASPasswordPrincipal"
+                   roleClassNames="org.waastad.websecurity.login.JAASRolePrincipal">
+            </Realm>-->
 
             <Host name="localhost"  appBase="webapps"
                   unpackWARs="true" autoDeploy="true">

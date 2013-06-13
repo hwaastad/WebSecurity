@@ -5,6 +5,14 @@
         <param-value>Production</param-value>
     </context-param>
     <servlet>
+        <servlet-name>CalculatorService</servlet-name>
+        <servlet-class>org.waastad.websecurity.service.Calculator</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CalculatorService</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
